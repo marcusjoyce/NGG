@@ -4,5 +4,5 @@ class Game {
 public:
 	Game();
 
-	Run();
+	void Run();
 };
