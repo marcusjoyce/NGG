@@ -9,6 +9,8 @@ public:
 private:
 	void BeginRound();
 
+	void GetGuess();
+
 	int wins = 0;
 	int score = 0;
 	int highscore = 0;
