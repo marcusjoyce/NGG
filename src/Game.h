@@ -8,8 +8,8 @@ public:
 
 private:
 	void BeginRound();
-
 	void GetGuess();
+	bool CheckGuess();
 
 	int wins = 0;
 	int score = 0;

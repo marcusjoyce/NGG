@@ -19,6 +19,27 @@ void Game::GetGuess()
 	std::cin >> guess;
 }
 
+bool Game::CheckGuess()
+{
+	if (guess == target)
+	{
+		std::cout << "Correct!\n";
+		return true;
+	}
+	
+	if (guess > target)
+	{
+		std::cout << "Your guess is too high!\n";
+		return false;
+	}
+
+	if (guess < target)
+	{
+		std::cout << "Your guess is too low!\n";
+		return false;
+	}
+}
+
 void Game::Run()
 {
 
