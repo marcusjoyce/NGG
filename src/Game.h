@@ -7,6 +7,11 @@ public:
 	void Run();
 
 private:
+	void BeginRound();
+
 	int wins = 0;
+	int score = 0;
 	int highscore = 0;
+	int guess = 0;
+	int target = 0;
 };
