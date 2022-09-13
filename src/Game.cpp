@@ -47,7 +47,7 @@ void Game::Run()
 	{
 		BeginRound();
 
-		while (true)
+		while (guesses > 0)
 		{
 			GetGuess();
 
