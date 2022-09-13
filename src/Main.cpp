@@ -1,7 +1,9 @@
+#include "Includes.h"
+#include "Game.h"
 
-
-int Main()
+int main()
 {
 	Game game;
 	game.Run();
+	return 0;
 }
