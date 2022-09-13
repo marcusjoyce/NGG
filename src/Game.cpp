@@ -10,6 +10,7 @@ void Game::BeginRound()
 {
 	std::srand(time(0));
 	target = std::rand() % 101;
+	guesses = 10;
 	std::cout << "Hello!\nCurrent score: " << score << "\n";
 }
 

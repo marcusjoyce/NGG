@@ -16,4 +16,5 @@ private:
 	int highscore = 0;
 	int guess = 0;
 	int target = 0;
+	int guesses = 10;
 };
