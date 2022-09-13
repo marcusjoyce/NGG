@@ -43,5 +43,22 @@ bool Game::CheckGuess()
 
 void Game::Run()
 {
+	while (true)
+	{
+		BeginRound();
 
+		while (true)
+		{
+			GetGuess();
+
+			if (CheckGuess())
+			{
+				break;
+			}
+			else
+			{
+				guesses--;
+			}
+		}
+	}
 }
