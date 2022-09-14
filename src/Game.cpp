@@ -41,6 +41,15 @@ bool Game::CheckGuess()
 	}
 }
 
+void Game::EndRound()
+{
+	if (guesses)
+	{
+		score += guesses;
+		std::cout << "You earned " << guesses << " points, your score is now " << score << "\n";
+	}
+}
+
 void Game::Run()
 {
 	while (true)
@@ -60,5 +69,7 @@ void Game::Run()
 				guesses--;
 			}
 		}
+
+		EndRound();
 	}
 }
