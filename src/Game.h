@@ -10,7 +10,7 @@ private:
 	void BeginRound();
 	void GetGuess();
 	bool CheckGuess();
-	void EndRound();
+	bool EndRound();
 	void Introduction();
 
 	int wins = 0;

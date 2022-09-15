@@ -41,12 +41,17 @@ bool Game::CheckGuess()
 	}
 }
 
-void Game::EndRound()
+bool Game::EndRound()
 {
 	if (guesses)
 	{
 		score += guesses;
 		std::cout << "You earned " << guesses << " points, your score is now " << score << "\n";
+		return false;
+	}
+	else
+	{
+		return true;
 	}
 }
 
@@ -76,6 +81,10 @@ void Game::Run()
 			}
 		}
 
-		EndRound();
+		if (EndRound())
+		{
+
+		}
 	}
+	
 }
