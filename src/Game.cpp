@@ -11,7 +11,7 @@ void Game::BeginRound()
 	std::srand(time(0));
 	target = std::rand() % 101;
 	guesses = 10;
-	std::cout << "Hello!\nCurrent score: " << score << "\n";
+	std::cout << "Hello!\nCurrent score: " << score << "\n\n";
 }
 
 void Game::GetGuess()
@@ -24,19 +24,19 @@ bool Game::CheckGuess()
 {
 	if (guess == target)
 	{
-		std::cout << "Correct!\n";
+		std::cout << "\nCorrect!\n";
 		return true;
 	}
 	
 	if (guess > target)
 	{
-		std::cout << "Your guess is too high!\n";
+		std::cout << "\nYour guess is too high!\n";
 		return false;
 	}
 
 	if (guess < target)
 	{
-		std::cout << "Your guess is too low!\n";
+		std::cout << "\nYour guess is too low!\n";
 		return false;
 	}
 }
