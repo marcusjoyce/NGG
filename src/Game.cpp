@@ -60,6 +60,15 @@ void Game::Introduction()
 	std::cout << "Hello! A number will be generated between 0 and 100 (including both 0 and 100), try to guess it in 10 guesses.\n\n";
 }
 
+bool Game::GoAgain()
+{
+	char ans;
+	std::cout << "\nGame over!\n\nYou got a final score of " << score << ".\nDo you wish to try again? (y/n): ";
+	std::cin >> ans;
+	
+	return (ans == 'y');
+}
+
 void Game::Run()
 {
 	Introduction();
@@ -83,7 +92,10 @@ void Game::Run()
 
 		if (EndRound())
 		{
-
+			if (!GoAgain())
+			{
+				break;
+			}
 		}
 	}
 	
