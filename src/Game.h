@@ -11,6 +11,7 @@ private:
 	void GetGuess();
 	bool CheckGuess();
 	void EndRound();
+	void Introduction();
 
 	int wins = 0;
 	int score = 0;

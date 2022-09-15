@@ -11,7 +11,7 @@ void Game::BeginRound()
 	std::srand(time(0));
 	target = std::rand() % 101;
 	guesses = 10;
-	std::cout << "Hello!\nCurrent score: " << score << "\n\n";
+	std::cout << "Current score: " << score << "\n\n";
 }
 
 void Game::GetGuess()
@@ -50,8 +50,14 @@ void Game::EndRound()
 	}
 }
 
+void Game::Introduction()
+{
+	std::cout << "Hello! A number will be generated between 0 and 100 (including both 0 and 100), try to guess it in 10 guesses.\n\n";
+}
+
 void Game::Run()
 {
+	Introduction();
 	while (true)
 	{
 		BeginRound();
