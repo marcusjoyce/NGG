@@ -99,6 +99,8 @@ void Game::Run()
 			{
 				break;
 			}
+
+			score = 0;
 		}
 	}
 	
