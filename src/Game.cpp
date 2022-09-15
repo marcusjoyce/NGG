@@ -80,6 +80,9 @@ void Game::Run()
 		{
 			GetGuess();
 
+			std::cout << "\x1B[2J\x1B[H";
+			std::cout << guess << std::endl;
+
 			if (CheckGuess())
 			{
 				break;
